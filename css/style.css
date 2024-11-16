@@ -19,17 +19,21 @@
     line-height: 2;
 }
 button {
-    padding: 10px 20px;
+    padding: 10px 20px; 
+    margin-left: 1em;
     background-color: #FFCB05;
     color: #00274C;
     font-weight: bold;
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease; /* code inspired by https://www.quora.com/How-do-you-animate-an-icon-when-hovering-over-a-div-JavaScript-HTML-CSS-and-development*/
 }
 
 button:hover {
     background-color: white;
+    transform: scale(1.1); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Code inspired by https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow */
 }
 
 
@@ -687,11 +691,15 @@ nav a {
     color: #FFCB05;
     font-weight: bold;
     text-decoration: underline; 
+    border-radius: 5px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease; /* code inspired by https://www.quora.com/How-do-you-animate-an-icon-when-hovering-over-a-div-JavaScript-HTML-CSS-and-development*/
 }
 
 nav a:hover{
     text-decoration: underline;
     color: white;
+    transform: scale(1.5); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Code inspired by https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow */
 }
 
 nav a.active {
