@@ -1,4 +1,4 @@
-const toggleButton = document.getElementById('toggleButton');
+const toggleButton = document.getElementById('toggleButton'); /*https://stackoverflow.com/questions/8454079/toggle-displaynone-style-with-javascript*/
 const formContainer = document.getElementById('formContainer');
 
 toggleButton.addEventListener('click', function() {
@@ -10,3 +10,4 @@ toggleButton.addEventListener('click', function() {
         toggleButton.textContent = 'Open Form'; 
     }
 });
+
