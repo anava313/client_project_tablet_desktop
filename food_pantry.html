@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Food Pantry</title>
+</head>
+<body class="home-page">
+
+    <div class="skip"><a href="#pantry_main">Skip to Main Content</a></div>
+
+    <header>
+        <div class= "banner">
+        <img class= "logo" src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href = "home.html">Home</a></li>
+                <li><a href = "first_gen.html">First Gen</a></li>
+                <li><a href = "food_pantry.html" class="active" >Food Pantry</a></li>
+                <li><a href = "caps.html">CAPS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="pantry_main" tabindex="-1">
+        <h1> Maize and Blue Cupboard</h1>
+        <section class="pantry_welcome">
+            <h2>Welcome to the Maize and Blue Cupboard section of the UM Grad Success Navigator</h2>
+            <br>
+            <h3>Maize and Blue Cupboard's Mission:</h3>
+            <br>
+                <p>To ensure members of the University of Michigan community—whether on a tight budget or physically restrained from getting to a grocery store—receive equitable access to healthy, nutritious, and nourishing food and the ability to prepare it for themselves or others.</p>
+                <br>
+            <h3>Maize and Blue Cupboard's "Who we are":</h3>
+            <br>
+                <p>College students and staff are experiencing food insecurity at alarming rates. The Maize and Blue Cupboard is here to provide an immediate and comprehensive response for the U-M community. By offering resources, educational opportunities, compassionate support and more, we help students develop the skills to make informed decisions.</p>
+                <br>
+            <h3>Maize and Blue Cupboard's "What we provide"</h3>
+            <br>
+                <h4>Food:</h4>
+                <br>
+                    <p>Produce, dairy, meat, bread, frozen and shelf-stable foods (i.e. rice, cans, tuna, etc.)</p>
+                    <br>
+                <h4>Kitchen and Cooking:</h4>
+                <br>
+                    <p>Dishes, silverware, pots & pans, Tupperware, cutting boards, knives, and other kitchenware</p>
+                    <br>
+                <h4>Personal and Household:</h4>
+                <br>
+                    <p>Trash bags, toilet paper, cleaning supplies, hygiene products, school supplies, baby items and more</p>
+                    <br>
+                <h4>Support:</h4>
+                <br>
+                    <p>Get connected to campus experts like CAPS, Dean of Students and Financial Aid, as well as SNAP (Michigan’s food program)</p>
+                    <br>
+                <p><a href="https://mbc.studentlife.umich.edu/">Maize and Blue Cupboard Website</a></p>
+            <!--Information was used directly from Maize and Blue Cupboard website (https://mbc.studentlife.umich.edu/, 2024)-->
+        
+
+        <figure>
+            <img src="images/mbc.jpeg" alt="Picture of students gathering and talking">
+            <figcaption>Michigan Students Interacting</figcaption>
+        </figure>
+    </section>
+
+        <section class="location">
+            <h3>Location and Hours</h3>
+            <br>
+            <h4>Location</h4>
+            <br>
+                <p>Located in the basement of the Betsy Barbour Residence Hall, please enter via the Maynard entrance only to ensure privacy for residents. Please contact us if you need ramp or elevator access.
+
+                Address: 420 S State St Ann Arbor, MI 48109
+                Phone: 734-936-2794
+                <br>
+            <h4>Hours</h4>
+            <br>
+                <p>On Monday 10/30 the Maize and Blue Cupboard will transition to shopping by appointment only. Schedule your shopping appointment here: <a href= "https://calendly.com/mbcappointments/mbc-shopping-appointments?month=2024-09"> Make an appointment</a></p>
+                <br>
+            <figure>
+                <img src="images/betsy_barbour_residence.jpg" alt=" Picture of the Betsy Barbour Residence House">
+                <figcaption>Betsy Barbour Residence House</figcaption>
+            </figure>
+            <br>
+            <h3>News and Updates</h3>
+            <br>
+                <p>The Maize and Blue Cupboard makes it easy for students to stay up to date with their news and events through their <a href="https://mbc.studentlife.umich.edu/news/"> news and events page.</a></p>
+                <br>
+            <h3>Recipes</h3>
+            <br>
+                <p>The Maize and Blue Cupboard focuses on aiding students on their wellness and health through providing nourishment as well as recipes for students. They also provide filters so that students with dietary restrictions (dairy-free, gluten-free, vegan, vegetarian) can also utilize the recipes.</p>
+                <br>
+                <p>For more information an access to these recipes, follow this link: <a href= "https://mbc.studentlife.umich.edu/recipes/"> Recipes Page</a></p>
+                <br>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h2>UMSI Advising Office</h2>
+                <p>University of Michigan School of Information</p>
+                <p>Address: 105 S. State Street, Ann Arbor, MI 48109</p>
+                <p>Email: <a href="umsi.advising@umich.edu">umsi.advising@umich.edu</a></p>
+                <p>Phone: <a href="tel:+17346498200">(734) 764-8200</a></p>
+            </div>
+            <div class="office-hours">
+                <h2>Office Hours</h2>
+                <p>Monday - Friday: 9:00 AM - 5:00 PM ET</p>
+                <p>Walk-in Hours: Wednesdays, 2:00 PM - 4:00 PM ET</p>
+            </div>
+            <div class="footer-bottom">
+                <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
+                <p>© Copyrights <span id="year"></span> University of Michigan School of Information. All rights reserved.</p>
+            </div>
+            <script>
+                document.getElementById("year").innerHTML = new Date().getFullYear();
+            </script>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+<!--All CAPS content taken from official CAPS website (https://caps.umich.edu/, 2024)-->

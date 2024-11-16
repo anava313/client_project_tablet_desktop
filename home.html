@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Student Success Portal</title>
+</head>
+<body class="home-page">
+
+    <div class="skip"><a href="#home_main">Skip to Main Content</a></div>
+
+    <header>
+        <div class= "banner">
+        <img class= "logo" src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href = "home.html" class="active">Home</a></li>
+                <li><a href = "first_gen.html">First Gen</a></li>
+                <li><a href = "food_pantry.html">Food Pantry</a></li>
+                <li><a href = "caps.html">CAPS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="home_main" tabindex="-1">
+        <h1>Student Success Portal</h1>
+        <section class="home_welcome">
+            <h2>Welcome to the UM Grad Success Navigator:</h2>
+            <p id="intro-phrase"> Your Comprehensive Guide to Resources for Graduate School Success.</p>
+            <br>
+            <p>This guide is set up to help you be successul inside and outside of the classroom and we have included the following resources throughout our site:</p>
+            <br>
+            <ul>
+                <li>Physical Health</li>
+                <li>Mental Health</li>
+                <li>Life Outside Classroom</li>
+                <li>Contact</li>
+            </ul>
+        </section>
+        <section class="home_health">
+            <h2>Physical Health</h2>
+            <br>
+            <p id="home_intro">Keeping your body healthy is essential for success. The University of Michigan offers numerous resources to help you stay in top physical condition:
+            </p>
+            <br>
+            <article id="uhs">
+                <h3>University Health Service (UHS):</h3>
+                <figure>
+                    <br>
+                    <img src="images/UHS.jpg" alt="University Health Services building">
+                    <figcaption>University Health Services Building</figcaption>
+                </figure>
+                <br>
+                <p>University Health Service (UHS): Access comprehensive medical care, including routine check-ups, vaccinations, and specialist referrals.</p>
+                <br>
+            </article>
+            <article>
+                <h3>Recreational Sports:</h3>
+                <br>
+                <figure>
+                    <img src="images/UMSI_CampusFall_UMSIBackpack_02.jpg" alt="A student wears a UMSI backpack in fall on the drag.">
+                    <figcaption>UMSI out in the fall!</figcaption>
+                </figure>
+                <br>
+                <p>Participate in various fitness programs, sports clubs, and use of gym facilities to stay active and healthy.</p>
+            </article>
+        </section>
+        
+        <section class="home_mental">
+            <h2>Mental Health</h2>
+            <p id="mental_phrase">Maintaining your mental well-being is crucial for thriving in graduate school. Here are resources to support your mental health:</p>
+            <article id="home_caps">
+                <h3>Counseling and Psychological Services (CAPS):</h3>
+                <p> Access individual counseling, group therapy, workshops, and crisis intervention services.</p>
+            </article>
+            <article id="home_wellness">
+                <h3>Wellness Coaching:</h3>
+                <p>Work with a wellness coach to develop strategies for managing stress, time, and overall well-being.</p>
+            </article>
+            <article id="mindfulness">
+                <h3>Mindfulness Resources:</h3>
+
+                <p> Participate in mindfulness and meditation sessions to cultivate a calm and focused mind.</p>
+            </article>
+            <article id="support_groups">
+                <h3>Support Groups:</h3>
+                <p> Join peer support groups for shared experiences and collective coping strategies.</p>
+            </article>
+        </section>
+
+        
+        <section id="life-outside-classroom">
+            <h2>Life Outside the Classroom</h2>
+            <p>Graduate school is more than just academics. It's important to cultivate a balanced life. Here are some resources to help you enjoy life outside the classroom:</p>
+            
+            <ul>
+                <li><strong>Student Organizations:</strong> Join one of the many student organizations to connect with peers who share your interests and passions.</li>
+                <li><strong>Arts and Culture:</strong> Explore UM's vibrant arts scene with events, exhibitions, and performances happening year-round.</li>
+                <li><strong>Career Services:</strong> Utilize career counseling, job search resources, and networking opportunities to prepare for your professional future.</li>
+                <li><strong>Community Engagement:</strong> Get involved with local volunteering opportunities and community service projects to make a positive impact.</li>
+                <li><strong>Housing and Dining:</strong> Find information on on-campus housing options and dining services to ensure a comfortable living experience.</li>
+            </ul>
+    
+        
+        <p>For more information on any specific subject, please select an option from the navigation bar located above.</p>
+
+        <p>If you would like to schedule an appointment with one of our UMSI advisors, please fill out the form below:</p>
+        <button id="toggleButton">Open Form</button>
+        <div id="formContainer" style="display: none;">
+        <h2>UMSI Advising Form</h2>
+        <form action="https://formspree.io/f/mkgnjrzd" method="POST"> 
+        <fieldset>
+            <legend>UMSI Advising Interest Form</legend>
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required>
+
+            <label for="program">Program: </label>
+            <input type="text" id="program" name="program">
+
+            <div class="radio-group">
+                <p>General Available Time for Advising Meetings:</p>
+                <input type="radio" id="morning" name="available-time" value="morning">
+                <label for="morning">Morning</label>
+
+                <input type="radio" id="afternoon" name="available-time" value="afternoon">
+                <label for="afternoon">Afternoon</label>
+
+                <input type="radio" id="evening" name="available-time" value="evening">
+                <label for="evening">Evening</label>
+
+                <input type="radio" id="weekend" name="available-time" value="weekend">
+                <label for="weekend">Weekend</label>
+            </div>
+
+            <label for="other-availability">Specific Available Time:</label>
+            <input type="text" id="other-availability" name="other-availability">
+
+            <div class="checkbox-group">
+                <p>Topics To Be Discussed:</p>
+                <input type="checkbox" id="classes" name="topics" value="classes">
+                <label for="classes">Classes</label>
+
+                <input type="checkbox" id="add_drop" name="topics" value="add_drop">
+                <label for="add_drop">Add/Drop Deadlines</label>
+
+                <input type="checkbox" id="career" name="topics" value="career">
+                <label for="career">Career Path</label>
+
+                <input type="checkbox" id="internships" name="topics" value="internships">
+                <label for="internships">Internships</label>
+            </div>
+
+            <label for="other-topics">Other Topic of Discussion:</label>
+            <input type="text" id="other-topics" name="other-topics">
+            <input type="submit" value="Submit">
+        </fieldset>
+        </form>
+        </div>
+        <script src="js/scripts.js"></script>
+        </section>
+        <!-- Content taken & modified from UMGPT with the prompt, "write me a webpage of intro content to help University of Michigan Master's students navigate different resources for being successful in grad school - this will include academic resources, physical health resources, mental health resources, support for life outside the classroom"
+        UMGPT. (2024). UMGPT (August 29th version) [Large language model]. -->
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h2>UMSI Advising Office</h2>
+                <p>University of Michigan School of Information</p>
+                <p>Address: 105 S. State Street, Ann Arbor, MI 48109</p>
+                <p>Email: <a href="umsi.advising@umich.edu">umsi.advising@umich.edu</a></p>
+                <p>Phone: <a href="tel:+17346498200">(734) 764-8200</a></p>
+            </div>
+            <div class="office-hours">
+                <h2>Office Hours</h2>
+                <p>Monday - Friday: 9:00 AM - 5:00 PM ET</p>
+                <p>Walk-in Hours: Wednesdays, 2:00 PM - 4:00 PM ET</p>
+            </div>
+            <div class="footer-bottom">
+                <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
+                <p>© Copyrights <span id="year"></span> University of Michigan School of Information. All rights reserved.</p>
+            </div>
+            <script>
+                document.getElementById("year").innerHTML = new Date().getFullYear();
+            </script>
+        </div>
+    </footer>
+</body>
+</html>
